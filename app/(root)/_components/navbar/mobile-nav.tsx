@@ -1,7 +1,7 @@
 "use client"
 
-import { Database, Menu } from "lucide-react"
-import { usePathname } from "next/navigation"
+import Link from "next/link"
+import { Menu } from "lucide-react"
 
 import {
   Sheet,
@@ -11,12 +11,10 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
+
 import { routes } from "./routes"
-import Link from "next/link"
 
 export const MobileNav = () => {
-  const pathname = usePathname()
-
   return (
     <Sheet>
       <SheetTrigger asChild>
